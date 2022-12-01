@@ -30,12 +30,13 @@
       flex-direction: column;
       align-items: center;
       padding: 15px;
-      max-width: clamp(25vw, 300px, 50vw);
+      width: clamp(25vw, 300px, 50vw);
+      /* width: 25%; */
       border-radius: 2%;
       row-gap: 30px;
     }
     img {
-      max-width: clamp(calc(25vw - 45px), calc(300px - 45px), calc(50vw - 45px));
+      width: 100%;
       border-radius: 2%;
       height: auto;
     }
@@ -68,11 +69,7 @@
 
     @media (min-height: 810px) {
       main {
-        max-width: 600px;
-        height: 75vh;
-      }
-      img {
-        max-width: calc(600px - 45px);
+        min-width: 600px;
       }
       .main-text {
         font-size: 2rem;
@@ -84,11 +81,7 @@
 
     @media (max-width: 450px) {
       main {
-        max-width: 300px;
-        height: 70vh;
-      }
-      img {
-        max-width: calc(300px - 45px);
+        min-width: 300px;
       }
     }
   </style>
